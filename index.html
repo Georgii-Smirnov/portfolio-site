@@ -18,7 +18,11 @@
         <meta property="og:site_name" content="Георгий — Веб-разработчик">
 		<meta name="pinterest" content="nopin">
 
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/vendor/tailwind.css">
+        <link rel="stylesheet" href="css/vendor/swiper.css">
+        <link rel="stylesheet" href="css/vendor/datatables.css">
+        <link rel="stylesheet" href="css/vendor/choices.css">
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-42Q0MXE6CL"></script><script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -35,7 +39,7 @@
         </video>
 
         <header id="main-menu" class="show">
-    <a href="/" class="relative flex items-center gap-3 text-white logo max-lg:pointer-events-auto max-lg:mr-auto">
+    <a href="#page-home" class="relative flex items-center gap-3 text-white logo max-lg:pointer-events-auto max-lg:mr-auto">
         <span class="font-bold tracking-tight">ГЕОРГИЙ</span>
         <span class="text-text-secondary text-sm uppercase tracking-widest">| ВЕБ-РАЗРАБОТЧИК</span>
     </a>
@@ -52,7 +56,7 @@
     </nav>
     <div class="flex items-center max-lg:mt-auto max-lg:self-center max-lg:mb-8 max-lg:flex-col max-lg:w-full header-bottom">
         
-<a href="#contact" class="flex-initial flex-centering button button-header relative js-encrypt-link">
+<a href="#contact" class="flex-initial flex-centering button button-header relative">
     <span>Обсудить проект</span>
     <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0947 0.178955L21.1658 8.25L22.1658 9.25L21.1658 10.25L13.0947 18.3211L11.6165 16.8428L18.2092 10.25H0.6875V8.25H18.2092L11.6165 1.65729L13.0947 0.178955Z" fill="black"></path>
@@ -139,8 +143,8 @@
                     <span class="flex items-center anim-opacity-translate anim-duration-10 anim-delay-13">Опыт <span class="mx-1 text-white/30">+</span> 5 лет</span>
                 </div>
                 <div class="sm:self-start max-sm:mt-2 homepage-btn-hire">
-                    
-<a href="#contact" class="flex-initial flex-centering button relative flex items-center max-sm:justify-center text-black text-md max-sm:mt-3 icon-black button-large js-encrypt-link homepage-cta-btn">
+                     
+<a href="#contact" class="flex-initial flex-centering button relative flex items-center max-sm:justify-center text-black text-md max-sm:mt-3 icon-black button-large homepage-cta-btn">
     <span>Обсудить проект</span>
     <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0947 0.178955L21.1658 8.25L22.1658 9.25L21.1658 10.25L13.0947 18.3211L11.6165 16.8428L18.2092 10.25H0.6875V8.25H18.2092L11.6165 1.65729L13.0947 0.178955Z" fill="black"></path>
@@ -367,36 +371,8 @@
         </div>
         <div class="flex flex-wrap items-start col-span-12 sm:col-span-8 sm:col-start-5 lg:col-span-9 lg:col-start-4 3xl:col-span-8 3xl:col-start-5">
             <div class="flex flex-wrap items-baseline gap-x-5 gap-y-2">
-                <div class="h4 max-xl:w-full">Алексей Петров</div>
-                <span class="text-sm font-medium uppercase text-text-secondary max-sm:w-full">Основатель магазина АудиоМир</span>
-                <span class="flex items-baseline gap-2 text-sm font-medium uppercase text-text-secondary icon-gradient">
-                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
-</svg>
-                    Санкт-Петербург
-                </span>
-            </div>
-            <p class="w-full mt-6 sm:mt-8 text-text-tertiary lg:pl-[8%] sm:pr-[10%] lg:pr-[28%] 3xl:pr-[35%]">
-                Георгий сделал для нас интернет-магазин на WooCommerce под ключ: от дизайна до интеграции платёжных систем. Очень доволен скоростью и качеством — всё сдано в срок, баги исправлялись оперативно. Сайт сразу начал приносить заказы. Рекомендую как надёжного разработчика, который погружается в проект.
-            </p>
-        </div>
-    </div>
-</div>
-                            <div class="swiper-slide">
-    <div class="items-start grid-12">
-        <div class="relative col-span-7 sm:col-span-3 sm:-mt-[32vw] -z-10 slider-photo-pull 3xl:col-start-1">
-            <picture class="relative block sm:w-[200%] lg:w-[180%]">
-                <source media="(min-width: 1024px)" srcset="images/florent.avif 1x, images/florent%402x.avif 2x" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="images/florent.avif 1x, images/florent%402x.jpg 2x" type="image/jpg">
-                <source srcset="images/florent.avif 1x, images/florent%402x.avif 2x" type="image/avif">
-                <source srcset="images/florent.jpg 1x, images/florent%402x.jpg 2x" type="image/jpg">
-                <img src="images/florent.jpg" alt="" class="relative w-full h-auto">
-            </picture>
-        </div>
-        <div class="flex flex-wrap items-start col-span-12 sm:col-span-8 sm:col-start-5 lg:col-span-9 lg:col-start-4 3xl:col-span-8 3xl:col-start-5">
-            <div class="flex flex-wrap items-baseline gap-x-5 gap-y-2">
-                <div class="h4 max-xl:w-full">Мария Иванова</div>
-                <span class="text-sm font-medium uppercase text-text-secondary max-sm:w-full">Маркетолог, СтройДом</span>
+                <div class="h4 max-xl:w-full">Анна Соколова</div>
+                <span class="text-sm font-medium uppercase text-text-secondary max-sm:w-full">Основательница студии интерьерного дизайна «Север»</span>
                 <span class="flex items-baseline gap-2 text-sm font-medium uppercase text-text-secondary icon-gradient">
                     <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
@@ -404,8 +380,8 @@
                     Москва
                 </span>
             </div>
-            <p class="w-full mt-6 sm:mt-8 text-text-tertiary lg:pl-[8%] sm:pr-[10%] lg:pr-[28%] 3xl:pr-[35%]">
-                Сотрудничали с Георгием по корпоративному сайту. Он самостоятельно разобрался в нашей специфике, предложил грамотную структуру на Elementor и аккуратно натянул всё на ACF — теперь мы сами редактируем контент без программиста. Отдельно отмечу терпение: правок было много, и все они учитывались.
+            <p class="w-full mt-6 sm:mt-8 text-text-tertiary lg:pl-[8%]">
+                Нужен был сайт, который передаёт ощущение воздуха и спокойствия. Георгий въехал в концепцию, предложил нестандартную сетку портфолио и собрал всё на WordPress с кастомными блоками — теперь сама меняю проекты без разработчика. Запустились в срок, клиенты говорят, что именно сайт убедил их обратиться. Рекомендую.
             </p>
         </div>
     </div>
@@ -428,7 +404,7 @@
                     Санкт-Петербург
                 </span>
             </div>
-            <p class="w-full mt-6 sm:mt-8 text-text-tertiary lg:pl-[8%] sm:pr-[10%] lg:pr-[28%] 3xl:pr-[35%]">
+            <p class="w-full mt-6 sm:mt-8 text-text-tertiary lg:pl-[8%]">
                 Для нашего ресторана нужен был сайт с онлайн-меню и системой бронирования. Георгий собрал его на WordPress с кастомной вёрсткой и JS-логикой для брони столиков — получилось стильно, атмосферно и удобно. Меню обновляется за пару минут, бронь работает без сбоев, а доля онлайн-бронирований заметно выросла. Гости часто отмечают, что сайт передаёт настроение заведения. Спасибо за внимательный подход!
             </p>
         </div>
@@ -454,7 +430,7 @@
                     Москва
                 </span>
             </div>
-            <p class="w-full mt-6 sm:mt-8 text-text-tertiary lg:pl-[8%] sm:pr-[10%] lg:pr-[28%] 3xl:pr-[35%]">
+            <p class="w-full mt-6 sm:mt-8 text-text-tertiary lg:pl-[8%]">
                 <a href="https://georgii-smirnov.github.io/wake-bake/" target="_blank" rel="noopener noreferrer" class="wake-bake-link">Для курса Wake&Bake нужен был лендинг</a> с записью и понятной подачей информации о программе. Георгий полностью взял на себя дизайн и разработку — получилось чисто, в нашем стиле и с продуманной структурой. Форма записи работает стабильно, заявки приходят без сбоев, а ученикам теперь легко разобраться в деталях курса. Очень доволен результатом и подходом!
             </p>
         </div>
@@ -510,68 +486,59 @@
                             </h2>
             <div class="grid grid-cols-6 gap-x-2 sm:gap-x-8" data-anim="listing">
                 
-<p class="col-span-6 mb-8 text-sm uppercase">CMS и плагины (БЭКЕНД)</p>
+<p class="col-span-6 mb-8 text-sm uppercase">CMS</p>
     <div class="flex items-baseline justify-between col-span-12 sm:col-span-4 py-4 border-t flex-row sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint">
     <span class="text-md text-text-secondary">WordPress</span>
-    <span class="flex items-baseline gap-2 text-sm font-medium text-text-secondary icon-gradient">
-        <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
-</svg>
+    <span class="flex items-baseline text-sm font-medium text-text-secondary icon-gradient">
         бэкенд
     </span>
 </div>
     <div class="flex items-baseline justify-between col-span-12 sm:col-span-4 py-4 border-t flex-row sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint">
     <span class="text-md text-text-secondary">PHP</span>
-    <span class="flex items-baseline gap-2 text-sm font-medium text-text-secondary icon-gradient">
-        <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
-</svg>
+    <span class="flex items-baseline text-sm font-medium text-text-secondary icon-gradient">
         Темы и плагины
     </span>
 </div>
     <div class="flex items-baseline justify-between col-span-12 sm:col-span-4 py-4 border-t flex-row sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint">
     <span class="text-md text-text-secondary">Elementor / Pro</span>
-    <span class="flex items-baseline gap-2 text-sm font-medium text-text-secondary icon-gradient">
-        <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
-</svg>
+    <span class="flex items-baseline text-sm font-medium text-text-secondary icon-gradient">
         Билдер
     </span>
 </div>
     <div class="flex items-baseline justify-between col-span-12 sm:col-span-4 py-4 border-t flex-row sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint">
     <span class="text-md text-text-secondary">WooCommerce</span>
-    <span class="flex items-baseline gap-2 text-sm font-medium text-text-secondary icon-gradient">
-        <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
-</svg>
+    <span class="flex items-baseline text-sm font-medium text-text-secondary icon-gradient">
         Магазин
     </span>
 </div>
     <div class="flex items-baseline justify-between col-span-12 sm:col-span-4 py-4 border-t flex-row sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint">
     <span class="text-md text-text-secondary">ACF Pro</span>
-    <span class="flex items-baseline gap-2 text-sm font-medium text-text-secondary icon-gradient">
-        <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
-</svg>
+    <span class="flex items-baseline text-sm font-medium text-text-secondary icon-gradient">
         Кастомные поля
     </span>
 </div>
     <div class="flex items-baseline justify-between col-span-12 sm:col-span-4 py-4 border-t flex-row sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint">
     <span class="text-md text-text-secondary">WP REST API</span>
-    <span class="flex items-baseline gap-2 text-sm font-medium text-text-secondary icon-gradient">
-        <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
-</svg>
+    <span class="flex items-baseline text-sm font-medium text-text-secondary icon-gradient">
         Интеграции
     </span>
 </div>
     <div class="flex items-baseline justify-between col-span-12 sm:col-span-4 py-4 border-t flex-row sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint">
     <span class="text-md text-text-secondary">Yoast / Rank Math</span>
-    <span class="flex items-baseline gap-2 text-sm font-medium text-text-secondary icon-gradient">
-        <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
-</svg>
+    <span class="flex items-baseline text-sm font-medium text-text-secondary icon-gradient">
         SEO
+    </span>
+</div>
+    <div class="flex items-baseline justify-between col-span-12 sm:col-span-4 py-4 border-t flex-row sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint">
+    <span class="text-md text-text-secondary">MODX</span>
+    <span class="flex items-baseline text-sm font-medium text-text-secondary icon-gradient">
+        CMS
+    </span>
+</div>
+    <div class="flex items-baseline justify-between col-span-12 sm:col-span-4 py-4 border-t flex-row sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint">
+    <span class="text-md text-text-secondary">Joomla</span>
+    <span class="flex items-baseline text-sm font-medium text-text-secondary icon-gradient">
+        CMS
     </span>
 </div>
             </div>
@@ -680,7 +647,7 @@
     <div class="flex items-baseline justify-between py-4 border-t sm:flex-col min-[1100px]:flex-row min-[1100px]:flex-wrap border-border-faint
 ">
     <span class="text-md text-text-secondary">Платёжные системы</span>
-    <span class="text-sm font-medium text-text-secondary">
+    <span class="text-sm font-medium text-text-secondary text-right">
         ЮKassa, CloudPayments
     </span>
 </div>
@@ -791,10 +758,7 @@
         Есть <span class="gradient-text">задача</span> или нужна консультация по сайту? Напишите — отвечу в течение дня и предложу решение.
     </p>
     <div class="col-span-12 pl-6 max-sm:my-6 sm:col-span-4 sm:col-start-8 animated-availability">
-        <span class="relative text-text-secondary flex items-center gap-3 mt-3 lg:gap-4 lg:mt-4 sm:mr-4 text-[14px] lg:text-[16px] availability">
-    <div class="relative w-3 h-3 rounded-full shrink-0 gradient-accent"></div>
-    Свободен для проектов
-</span>
+        <img src="images/image-removebg-preview.webp" alt="Готов к проектам" class="relative text-text-secondary sm:mr-4 max-w-full h-auto">
     </div>
     <div class="col-span-12 mt-6 lg:mt-4 sm:col-span-10 sm:col-start-2 lg:col-start-2 lg:col-span-5 xl:col-span-4 xl:col-start-3">
         
@@ -807,7 +771,7 @@
     </div>
     <div class="col-span-12 mt-2 lg:mt-4 sm:col-span-10 sm:col-start-2 lg:col-span-5 lg:col-start-7 xl:col-span-4 xl:col-start-7">
         
-<a href="https://t.me/georgy_dev" target="_blank" rel="noopener" class="flex-initial flex-centering button button-large flex border border-gradient-accent icon-white relative max-sm:px-3">
+<a href="https://t.me/ddvln" target="_blank" rel="noopener" class="flex-initial flex-centering button button-large flex border border-gradient-accent icon-white relative max-sm:px-3">
     <span>Написать в Telegram</span>
     <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0947 0.178955L21.1658 8.25L22.1658 9.25L21.1658 10.25L13.0947 18.3211L11.6165 16.8428L18.2092 10.25H0.6875V8.25H18.2092L11.6165 1.65729L13.0947 0.178955Z" fill="black"></path>
@@ -817,8 +781,8 @@
     <div class="col-span-12 mt-10 sm:col-span-10 sm:col-start-2 sm:mt-16">
         <div class="flex flex-wrap items-baseline justify-between gap-4 text-sm uppercase text-text-secondary max-sm:text-tiny">
             <a href="#page-home" class="link">Наверх ↑</a>
-            <span>© 2026 georgy.dev. Все права защищены.</span>
-            <a href="https://t.me/georgy_dev" target="_blank" rel="noopener" class="link">Связаться в Telegram</a>
+            <span>© 2026 Георгий Смирнов. Все права защищены.</span>
+            <a href="https://t.me/ddvln" target="_blank" rel="noopener" class="link">Связаться в Telegram</a>
         </div>
     </div>
 </footer>
