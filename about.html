@@ -129,7 +129,7 @@
         <div class="flex flex-col items-center justify-between sm:flex-row sm:h-16">
             <h1 class="overflow-hidden text-center h5 grow max-sm:py-2">
                 <span class="hidden">Обо мне — Георгий Смирнов</span>
-                <span class="block anim-opacity-translate-self anim-duration-10 anim-delay-12">Человек · Разработчик · Путь с 2020 года</span>
+                <span class="block anim-opacity-translate-self anim-duration-10 anim-delay-12">Человек · Разработчик · Путь с 2021 года</span>
             </h1>
             <div class="flex flex-col items-center h-full max-sm:overflow-hidden sm:flex-row max-sm:w-50">
                 
@@ -157,21 +157,16 @@
         <div class="grid-12">
             <h2 class="col-span-12 mb-12 h3 sm:mb-18">
                 <span class="letter-container">
-                    <span class="letter-anim" data-anim="opacity-translate-self">Обо мне</span>
+                    <span class="letter-anim" data-anim="opacity-translate-self">Привет!</span>
                 </span>
                 <span class="flex items-baseline gap-[3vw] -mt-[2.5vw] sm:-mt-[2vw] w-full justify-start sm:translate-x-[6vw]">
                     <span class="letter-container">
-                        <span class="letter-anim anim-delay-1" data-anim="opacity-translate-self">как&nbsp;человеке</span>
-                    </span>
-                </span>
-                <span class="flex items-baseline gap-[3vw] -mt-[2.5vw] sm:-mt-[2vw] w-full justify-end sm:justify-start sm:translate-x-[6vw]">
-                    <span class="letter-container">
-                        <span class="letter-anim anim-delay-3 gradient-text-reverse" data-anim="opacity-translate-self">и разработчике</span>
+                        <span class="letter-anim anim-delay-1 gradient-text-reverse" data-anim="opacity-translate-self">Давай знакомиться!</span>
                     </span>
                 </span>
             </h2>
 
-            <div class="col-span-12 bio__intro">
+            <div class="col-span-12 bio__intro anim-opacity anim-delay-2">
                 <div class="bio__lead-row">
                     <img class="bio__avatar" src="images/logo-adbout.webp" alt="Георгий">
                     <p class="bio__lead">Меня зовут Георгий. Мне 21 лет, я из Санкт-Петербурга. За последние пять лет я прошёл путь от первого «Hello, world» до запуска десятков коммерческих сайтов на WordPress. Здесь — коротко обо мне как о человеке: что меня драйвит, чем живу вне работы и почему мне можно доверить ваш проект.</p>
@@ -337,20 +332,6 @@
                 after(1400, function() { typing.hidden = true; bot2.hidden = false; scrollToBottom(); });
                 after(1800, function() { messengerActions.hidden = false; });
             }
-            var chatOpenedByScroll = false;
-            function tryOpenOnScroll() {
-                if (chatOpenedByScroll) {
-                    window.removeEventListener('scroll', tryOpenOnScroll, { passive: true });
-                    return;
-                }
-                if (window.scrollY > 200) {
-                    chatOpenedByScroll = true;
-                    window.removeEventListener('scroll', tryOpenOnScroll, { passive: true });
-                    openChat();
-                }
-            }
-            window.addEventListener('scroll', tryOpenOnScroll, { passive: true });
-
             trigger.addEventListener('click', openChat);
             closeBtn.addEventListener('click', closeChat);
             buttons.forEach(function(btn) {
@@ -365,8 +346,50 @@
         </script>
 
         <script src="js/app.js"></script>
-        
 
-    
+        <script>
+        (function() {
+            var timeline = document.querySelector('.bio__timeline');
+            if (!timeline) return;
+
+            var rows = Array.prototype.slice.call(timeline.querySelectorAll('.bio__row'));
+            var ticking = false;
+
+            function update() {
+                var rect = timeline.getBoundingClientRect();
+                var vh = window.innerHeight || document.documentElement.clientHeight;
+                var total = rect.height;
+                var passed = vh - rect.top;
+                var progress = Math.max(0, Math.min(1, passed / (total + vh * 0.3)));
+                timeline.style.setProperty('--bio-line-progress', progress.toFixed(4));
+
+                var lineTop = rect.top + 40;
+                var lineHeight = Math.max(0, rect.height - 80);
+                var lineEnd = lineTop + progress * lineHeight;
+
+                for (var i = 0; i < rows.length; i++) {
+                    var r = rows[i].getBoundingClientRect();
+                    var center = r.top + r.height / 2;
+                    if (lineEnd >= center) {
+                        rows[i].classList.add('bio__row--passed');
+                    } else {
+                        rows[i].classList.remove('bio__row--passed');
+                    }
+                }
+
+                ticking = false;
+            }
+            function onScroll() {
+                if (!ticking) {
+                    window.requestAnimationFrame(update);
+                    ticking = true;
+                }
+            }
+            update();
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', onScroll);
+        })();
+        </script>
+
 
 </body></html>

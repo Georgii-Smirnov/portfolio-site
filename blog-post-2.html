@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="ru"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Почему я перешёл с Elementor на кастомную вёрстку — Георгий Смирнов</title>
+
+        <link rel="icon" type="image/svg" href="images/logo.svg">
+
+        <meta name="title" content="Почему я перешёл с Elementor на кастомную вёрстку — Георгий Смирнов">
+        <meta name="description" content="Как менялся мой подход к разработке на WordPress и почему готовые конструкторы не всегда спасают.">
+        <meta property="og:title" content="Почему я перешёл с Elementor на кастомную вёрстку — Георгий Смирнов">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://georgy.dev/blog-post-2.html">
+        <meta property="og:image" content="images/og-image.jpg">
+		<link rel="image_src" href="images/og-image.jpg">
+        <meta property="og:description" content="Как менялся мой подход к разработке на WordPress и почему готовые конструкторы не всегда спасают.">
+        <meta property="og:site_name" content="Георгий — Веб-разработчик">
+		<meta name="pinterest" content="nopin">
+
+        <link rel="stylesheet" href="css/app.css">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-42Q0MXE6CL"></script><script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-42Q0MXE6CL');
+    </script></head>
+
+    <body id="page-blog">
+        <video autoplay="" muted="" loop="" class="video-background">
+            <source src="media/background.mp4" type="video/mp4">
+        </video>
+
+        <header id="main-menu" class="show">
+    <a href="/" class="relative flex items-center gap-3 text-white logo max-lg:pointer-events-auto max-lg:mr-auto">
+        <span class="font-bold tracking-tight">ГЕОРГИЙ</span>
+        <span class="text-text-secondary text-sm uppercase tracking-widest">| ВЕБ-РАЗРАБОТЧИК</span>
+    </a>
+    <button class="menu-open lg:hidden menu-toggler max-lg:pointer-events-auto" aria-label="Открыть меню" title="Открыть меню" data-toggle="main-menu" data-toggle-class="opened" aria-expanded="false">
+        <span class="w-full h-full"></span>
+    </button>
+    <nav class="relative header-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#work">Проекты</a></li>
+            <li><a href="index.html#services">Услуги</a></li>
+            <li><a href="index.html#blog">Блог</a></li>
+            <li><a href="#contact" class="contact-link menu-toggler" aria-label="Скрыть меню и показать контакты" title="Скрыть меню и показать контакты" data-toggle="main-menu" data-toggle-class="opened">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="flex items-center max-lg:mt-auto max-lg:self-center max-lg:mb-8 max-lg:flex-col max-lg:w-full header-bottom">
+        
+<a href="#contact" class="flex-initial flex-centering button button-header relative js-encrypt-link">
+    <span>Обсудить проект</span>
+    <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.0947 0.178955L21.1658 8.25L22.1658 9.25L21.1658 10.25L13.0947 18.3211L11.6165 16.8428L18.2092 10.25H0.6875V8.25H18.2092L11.6165 1.65729L13.0947 0.178955Z" fill="black"></path>
+</svg>
+</a>
+        <div class="relative flex items-center gap-2 header-location">
+            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M2.75 8.70312C2.75 8.70312 5.5 6.56566 5.5 3.04688C5.5 1.52809 4.26878 0.296875 2.75 0.296875C1.23122 0.296875 0 1.52809 0 3.04688C0 6.56566 2.75 8.70312 2.75 8.70312ZM2.75 4.79688C3.7165 4.79688 4.5 4.01337 4.5 3.04688C4.5 2.08038 3.7165 1.29688 2.75 1.29688C1.7835 1.29688 1 2.08038 1 3.04688C1 4.01337 1.7835 4.79688 2.75 4.79688Z" fill="url(#svg-gradient)"></path>
+</svg>
+            Санкт-Петербург, Россия
+        </div>
+    </div>
+</header>
+
+            <section class="relative pt-12 pb-8 sm:pt-20 sm:pb-12">
+<div class="relative h-[1px] w-full bg-border-faint max-sm:hidden anim-left-right anim-duration-15 anim-delay-10"></div>
+        <div class="flex flex-col items-center justify-between sm:flex-row sm:h-16">
+            <h1 class="overflow-hidden text-center sm:text-left h5 grow max-sm:py-2 max-sm:px-4 max-sm:max-w-[20rem]">
+                <span class="hidden">Почему я перешёл с Elementor на кастомную вёрстку</span>
+                <span class="block anim-opacity-translate-self anim-duration-10 anim-delay-12">Блог</span>
+            </h1>
+        </div>
+        
+<div class="relative h-[1px] w-full bg-border-faint max-sm:hidden anim-left-right anim-duration-15 anim-delay-10"></div>
+    </section>
+
+    <section class="relative py-8 sm:py-12 grid-12 blog-post">
+        <div class="col-span-12 sm:col-start-2 sm:col-span-10 lg:col-start-3 lg:col-span-8">
+            <div class="blog-post__header">
+                <div class="blog-post__meta">
+                    <span>15 июня 2026</span>
+                    <span>·</span>
+                    <span>Георгий Смирнов</span>
+                </div>
+                <h1 class="blog-post__title">Почему я перешёл с Elementor на кастомную вёрстку</h1>
+            </div>
+            <img src="images/work/02.png" alt="Почему я перешёл с Elementor на кастомную вёрстку" class="blog-post__img">
+            <div class="blog-post__content">
+                <p>Когда я начинал в 2021 году, Elementor казался волшебством: перетащил блоки — и сайт готов. Но спустя пару десятков проектов я понял, что волшебство оборачивается проблемами.</p>
+
+<h3>Почему я ушёл от конструкторов</h3>
+<p>На пятый похожий лендинг ты понимаешь: Elementor генерирует тонну лишнего кода, замедляет сайт и ограничивает креативность. Клиент ломает вёрстку одним лишним пробелом в текстовом блоке. Плагин конфликтует с другим плагином — и сайт падает.</p>
+
+<h3>Преимущества кастома</h3>
+<ul>
+    <li>Чистый, лёгкий код без лишних скриптов</li>
+    <li>Полный контроль над анимациями и интерактивом</li>
+    <li>Сайт не ломается от обновления плагина</li>
+    <li>PageSpeed 90+ без танцев с бубном</li>
+</ul>
+
+<h3>Когда Elementor всё ещё нужен</h3>
+<p>Для простых лендингов под ключ и клиентов, которые сами будут править текст — конструкторы отличны. Но если проект требует уникального дизайна, сложных фильтров или интеграций, кастомная вёрстка окупается с первого месяца.</p>
+            </div>
+            <a href="index.html#blog" class="blog-post__back">
+                <svg width="23" height="19" viewBox="0 0 23 19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9.9053 0.178955L1.8342 8.25L0.8342 9.25L1.8342 10.25L9.9053 18.3211L11.3835 16.8428L4.7908 10.25H22.3125V8.25H4.7908L11.3835 1.65729L9.9053 0.178955Z"/>
+                </svg>
+                Вернуться к новостям
+            </a>
+        </div>
+    </section>
+
+<div class="relative h-[1px] w-full bg-border-faint anim-duration-15" data-anim="left-right"></div>
+
+<footer class="items-center pt-12 pb-12 grid-12 sm:pt-20 xl:pt-24 anim-duration-20" id="contact" data-anim="opacity">
+    <p class="col-span-12 sm:col-span-5 sm:col-start-2 h4 text-medium">
+        Есть <span class="gradient-text">задача</span> или нужна консультация по сайту? Напишите — отвечу в течение дня и предложу решение.
+    </p>
+    <div class="col-span-12 pl-6 max-sm:my-6 sm:col-span-4 sm:col-start-8 animated-availability">
+        <span class="relative text-text-secondary flex items-center gap-3 mt-3 lg:gap-4 lg:mt-4 sm:mr-4 text-[14px] lg:text-[16px] availability">
+    <div class="relative w-3 h-3 rounded-full shrink-0 gradient-accent"></div>
+    Свободен для проектов
+</span>
+    </div>
+    <div class="col-span-12 mt-6 lg:mt-4 sm:col-span-10 sm:col-start-2 lg:col-start-2 lg:col-span-5 xl:col-span-4 xl:col-start-3">
+        
+<a href="https://max.ru" target="_blank" rel="noopener noreferrer" class="flex-initial flex-centering button button-large flex border-gradient-accent icon-white relative max-sm:px-3">
+    <span>Написать в MAX</span>
+    <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.0947 0.178955L21.1658 8.25L22.1658 9.25L21.1658 10.25L13.0947 18.3211L11.6165 16.8428L18.2092 10.25H0.6875V8.25H18.2092L11.6165 1.65729L13.0947 0.178955Z" fill="black"></path>
+</svg>
+</a>
+    </div>
+    <div class="col-span-12 mt-2 lg:mt-4 sm:col-span-10 sm:col-start-2 lg:col-span-5 lg:col-start-7 xl:col-span-4 xl:col-start-7">
+        
+<a href="https://t.me/georgy_dev" target="_blank" rel="noopener" class="flex-initial flex-centering button button-large flex border border-gradient-accent icon-white relative max-sm:px-3">
+    <span>Написать в Telegram</span>
+    <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.0947 0.178955L21.1658 8.25L22.1658 9.25L21.1658 10.25L13.0947 18.3211L11.6165 16.8428L18.2092 10.25H0.6875V8.25H18.2092L11.6165 1.65729L13.0947 0.178955Z" fill="black"></path>
+</svg>
+</a>
+    </div>
+    <div class="col-span-12 mt-10 sm:col-span-10 sm:col-start-2 sm:mt-16">
+        <div class="flex flex-wrap items-baseline justify-between gap-4 text-sm uppercase text-text-secondary max-sm:text-tiny">
+            <a href="index.html" class="link">На главную ↑</a>
+            <span>© 2026 georgy.dev. Все права защищены.</span>
+            <a href="https://t.me/georgy_dev" target="_blank" rel="noopener" class="link">Связаться в Telegram</a>
+        </div>
+    </div>
+</footer>
+
+        <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="svg-gradient" x1="10.8393" y1="0.633058" x2="0.125414" y2="1.00454" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#f97316"></stop>
+            <stop offset="1" stop-color="#ef4444"></stop>
+            </linearGradient>
+        </defs>
+        </svg>
+
+        <script src="js/app.js"></script>
+
+</body></html>

@@ -217,7 +217,7 @@
             <div class="relative col-span-12 max-sm:text-center sm:col-span-9 sm:col-start-3">
                 <div class="absolute block w-[1px] h-[18vw] bottom-0 left-0 bg-border-strong max-sm:hidden button-about-line" data-anim="draw-line"></div>
                 
-<a href="about.html" class="flex-initial flex-centering button button-large inline-flex border-gradient-accent icon-white mt-10 relative anim-duration-20" data-anim="opacity">
+<a href="about.html" id="hero-about-btn" class="flex-initial flex-centering button button-large inline-flex border-gradient-accent icon-white mt-10 relative" style="opacity:0; transition: opacity 0.3s ease-out;">
     <span>Обо мне</span>
     <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0947 0.178955L21.1658 8.25L22.1658 9.25L21.1658 10.25L13.0947 18.3211L11.6165 16.8428L18.2092 10.25H0.6875V8.25H18.2092L11.6165 1.65729L13.0947 0.178955Z" fill="black"></path>
@@ -724,20 +724,17 @@
 
             <div class="col-span-12 pricing__grid" data-anim="listing">
                 <article class="pricing__card">
-                    <div class="pricing__card-header">
-                        <div class="pricing__card-name">Базовый</div>
+                    <div class="pricing__card-head">
+                        <h3 class="pricing__card-name">Базовый</h3>
+                        <p class="pricing__card-desc">Лендинг для быстрого старта</p>
                     </div>
                     <div class="pricing__card-price">15&nbsp;000&nbsp;₽</div>
-                    <div class="pricing__card-desc">Лендинг для быстрого старта</div>
                     <ul class="pricing__card-list">
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Лендинг до 5 блоков</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Адаптивная вёрстка</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Натяжка на Elementor</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Базовая SEO-оптимизация</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Сдача за 5 дней</span></li>
-                        <li class="pricing__card-item pricing__card-item--minus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l10 10M14 4L4 14"/></svg><span>Без кастомного дизайна</span></li>
-                        <li class="pricing__card-item pricing__card-item--minus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l10 10M14 4L4 14"/></svg><span>Без интеграций с CRM</span></li>
-                        <li class="pricing__card-item pricing__card-item--minus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l10 10M14 4L4 14"/></svg><span>Без копирайтинга</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Лендинг до 5 блоков</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Адаптивная вёрстка</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Натяжка на Elementor</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Базовая SEO-оптимизация</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Сдача за 5 дней</span></li>
                     </ul>
                     <a href="#contact" class="button button-large border-gradient-accent pricing__card-btn">
                         <span>Выбрать</span>
@@ -747,20 +744,18 @@
 
                 <article class="pricing__card pricing__card--featured">
                     <div class="pricing__card-badge">Популярный</div>
-                    <div class="pricing__card-header">
-                        <div class="pricing__card-name">Премиум</div>
+                    <div class="pricing__card-head">
+                        <h3 class="pricing__card-name">Премиум</h3>
+                        <p class="pricing__card-desc">Многостраничный сайт под ключ</p>
                     </div>
                     <div class="pricing__card-price">40&nbsp;000&nbsp;₽</div>
-                    <div class="pricing__card-desc">Многостраничный сайт под ключ</div>
                     <ul class="pricing__card-list">
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Многостраничный сайт (до 7 страниц)</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Уникальный дизайн в Figma</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Анимации и интерактив</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Интеграция с CRM/формами</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>SEO + PageSpeed 90+</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Сдача за 14 дней</span></li>
-                        <li class="pricing__card-item pricing__card-item--minus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l10 10M14 4L4 14"/></svg><span>Без копирайтинга</span></li>
-                        <li class="pricing__card-item pricing__card-item--minus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l10 10M14 4L4 14"/></svg><span>Без поддержки после сдачи</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Многостраничный сайт (до 7 страниц)</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Уникальный дизайн в Figma</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Анимации и интерактив</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Интеграция с CRM/формами</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>SEO + PageSpeed 90+</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Сдача за 14 дней</span></li>
                     </ul>
                     <a href="#contact" class="button button-large pricing__card-btn pricing__card-btn--primary">
                         <span>Выбрать</span>
@@ -769,20 +764,18 @@
                 </article>
 
                 <article class="pricing__card">
-                    <div class="pricing__card-header">
-                        <div class="pricing__card-name">Персональный</div>
+                    <div class="pricing__card-head">
+                        <h3 class="pricing__card-name">Персональный</h3>
+                        <p class="pricing__card-desc">Полный кастом под ваш бизнес</p>
                     </div>
                     <div class="pricing__card-price">от&nbsp;80&nbsp;000&nbsp;₽</div>
-                    <div class="pricing__card-desc">Полный кастом под ваш бизнес</div>
                     <ul class="pricing__card-list">
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Без ограничений по страницам</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Полный кастом (дизайн + функционал)</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Копирайтинг включён</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Любые интеграции (1С, оплата, API)</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Поддержка 30 дней после сдачи</span></li>
-                        <li class="pricing__card-item pricing__card-item--plus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Приоритет в очереди</span></li>
-                        <li class="pricing__card-item pricing__card-item--minus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l10 10M14 4L4 14"/></svg><span>Срок от 21 дня</span></li>
-                        <li class="pricing__card-item pricing__card-item--minus"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l10 10M14 4L4 14"/></svg><span>Дорого (но оно того стоит)</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Без ограничений по страницам</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Полный кастом (дизайн + функционал)</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Копирайтинг включён</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Любые интеграции (1С, оплата, API)</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Поддержка 30 дней после сдачи</span></li>
+                        <li class="pricing__card-item"><svg class="pricing__card-item-icon" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5l3.5 3.5 7.5-8"/></svg><span>Приоритет в очереди</span></li>
                     </ul>
                     <a href="#contact" class="button button-large border-gradient-accent pricing__card-btn">
                         <span>Выбрать</span>
@@ -792,8 +785,6 @@
             </div>
         </section>
 
-
-<div class="relative h-[1px] w-full bg-border-faint anim-duration-15" data-anim="left-right"></div>
 
 <footer class="items-center pt-12 pb-12 grid-12 sm:pt-20 xl:pt-24 anim-duration-20" id="contact" data-anim="opacity">
     <p class="col-span-12 sm:col-span-5 sm:col-start-2 h4 text-medium">
@@ -910,7 +901,7 @@
                 if (window.scrollY > 200) {
                     chatOpenedByScroll = true;
                     window.removeEventListener('scroll', tryOpenOnScroll, { passive: true });
-                    openChat();
+                    setTimeout(openChat, 2000);
                 }
             }
             window.addEventListener('scroll', tryOpenOnScroll, { passive: true });
@@ -925,6 +916,26 @@
                     else if (action === 'max' || action === 'telegram') { after(100, closeChat); }
                 });
             });
+        })();
+        </script>
+
+        <script>
+        (function() {
+            var lastLetter = document.querySelector('h2 .letter-anim.anim-delay-5[data-anim="opacity-translate-self"]');
+            var btn = document.getElementById('hero-about-btn');
+            if (!lastLetter || !btn) return;
+
+            function showBtn() {
+                btn.style.opacity = '1';
+            }
+
+            if (window.getComputedStyle(lastLetter).opacity === '1') {
+                showBtn();
+                return;
+            }
+
+            lastLetter.addEventListener('animationend', showBtn);
+            lastLetter.addEventListener('webkitAnimationEnd', showBtn);
         })();
         </script>
 
