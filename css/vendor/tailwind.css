@@ -683,11 +683,11 @@ footer .availability .rounded-full::before, footer .availability .rounded-full::
         mix-blend-mode: lighten;
 }
 .arrow-stroke #arrow-fill {
-    opacity: 0;
+    opacity: 1;
         transition: 0.3s ease-in-out;
 }
 .arrow-stroke:hover #arrow-fill {
-    opacity: 1;
+    opacity: 0.7;
 }
 .subtitle-double-line {
     position: relative;
