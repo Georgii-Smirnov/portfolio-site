@@ -28,7 +28,7 @@
     
 
     <body id="page-home">
-        <video autoplay="" muted="" loop="" class="video-background">
+        <video autoplay="" muted="" loop="" playsinline="" preload="metadata" class="video-background" poster="images/hero-poster.webp">
             <source src="media/background.mp4" type="video/mp4">
         </video>
 
@@ -157,74 +157,88 @@
     </section>
 
     <section class="relative overflow-hidden" id="services">
-        <h2 class="mt-12 grid-12 sm:mt-20 lg:mt-30 h3 hero-subtitle">
-            <span class="flex flex-col items-start col-start-1 col-end-13 sm:col-start-2 sm:col-end-12">
-                <span class="hero-subtitle-line gap-x-4" data-anim="draw-line">
-                    
-<span class="letter-container ">
-    <span class="letter-anim " data-anim="opacity-translate-self">
-        Создаю
-    </span>
-</span>
-<span class="letter-container">
-    <span class="letter-anim anim-delay-1" data-anim="opacity-translate-self">
-        сайты
-    </span>
-</span>
-                </span>
-                <span class="flex items-baseline gap-[3vw] -mt-[2vw] sm:-mt-[2vw]">
-                    
-<span class="letter-container ">
-    <span class="letter-anim anim-delay-2" data-anim="opacity-translate-self">
-        на
-    </span>
-</span>
-                    
-<span class="letter-container">
-    <span class="letter-anim anim-delay-3" data-anim="opacity-translate-self">
-        <span class="inline-block ">
-            <svg width="46" height="47" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M45.8711 9.06392V41.9819L45.8711 46.0605L45.8711 46.0606L8.87463 46.0606L8.87463 40.0312L35.7634 40.0312L0.0320142 4.29983L4.11054 0.221308L39.8418 35.9526L39.8418 9.06392L45.8711 9.06392Z" fill="#6B6B6B"></path>
-</svg>
-        </span>
-    </span>
-</span>
-                </span>
-                <span class="flex items-baseline gap-[3vw] -mt-[4vw] sm:-mt-[8vw] w-full justify-end sm:justify-center sm:translate-x-[11vw]">
-                    
-<span class="letter-container ">
-    <span class="letter-anim anim-delay-4 gradient-text-reverse" data-anim="opacity-translate-self">
-        WordPress
-    </span>
-</span>
-
-                </span>
-                <span class="flex items-baseline gap-[3vw] -mt-[2vw] sm:-mt-[4vw] w-full justify-end sm:justify-center sm:translate-x-[11vw]">
-                    
-<span class="letter-container ">
-    <span class="letter-anim anim-delay-5 gradient-text-reverse" data-anim="opacity-translate-self">
-        под ключ
-    </span>
-</span>
-
-                </span>
-            </span>
-        </h2>
-
-        <div class="grid-12">
-            <div class="relative col-span-12 max-sm:text-center sm:col-span-9 sm:col-start-3">
-                <div class="absolute block w-[1px] h-[18vw] bottom-0 left-0 bg-border-strong max-sm:hidden button-about-line" data-anim="draw-line"></div>
-                
-<a href="about.html" id="hero-about-btn" class="flex-initial flex-centering button button-large inline-flex border-gradient-accent icon-white mt-10 relative" style="opacity:0; transition: opacity 0.3s ease-out;">
-    <span>Обо мне</span>
-    <svg width="23" height="19" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M13.0947 0.178955L21.1658 8.25L22.1658 9.25L21.1658 10.25L13.0947 18.3211L11.6165 16.8428L18.2092 10.25H0.6875V8.25H18.2092L11.6165 1.65729L13.0947 0.178955Z" fill="black"></path>
-</svg>
-</a>
+        <div class="grid-12 mt-16 sm:mt-20 lg:mt-24" style="padding-left: 16px; padding-right: 16px;">
+            <div class="col-span-12 flex flex-col items-center">
+                <h2 class="hero-subtitle hero-shine text-center w-full" style="font-size: clamp(22px, 5vw, 88px); line-height: 1.1; font-weight: 600; letter-spacing: -0.02em;">
+                    <span class="flex flex-wrap items-baseline justify-center" style="gap: 0 0.15em;">
+                        <span class="letter-container">
+                            <span class="letter-anim" data-anim="opacity-translate-self">Увеличьте</span>
+                        </span>
+                        <span class="letter-container">
+                            <span class="letter-anim anim-delay-1" data-anim="opacity-translate-self">продажи</span>
+                        </span>
+                        <span class="letter-container">
+                            <span class="letter-anim anim-delay-2" data-anim="opacity-translate-self">с сайтом,</span>
+                        </span>
+                    </span>
+                    <span class="flex flex-wrap items-baseline justify-center mt-[0.6vw]" style="gap: 0 0.15em;">
+                        <span class="letter-container">
+                            <span class="letter-anim anim-delay-3" data-anim="opacity-translate-self">который</span>
+                        </span>
+                        <span class="letter-container">
+                            <span class="letter-anim anim-delay-4" data-anim="opacity-translate-self">выделяется</span>
+                        </span>
+                        <span class="letter-container">
+                            <span class="letter-anim anim-delay-5" data-anim="opacity-translate-self">на фоне</span>
+                        </span>
+                        <span class="letter-container">
+                            <span class="letter-anim anim-delay-6" data-anim="opacity-translate-self" style="background: linear-gradient(135deg, #f97316 0%, #ef4444 50%, #f59e0b 100%); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: 0.05em; filter: drop-shadow(1px 1px 0 rgba(120, 20, 0, 0.4)) drop-shadow(2px 2px 0 rgba(120, 20, 0, 0.3)) drop-shadow(3px 3px 0 rgba(120, 20, 0, 0.2)) drop-shadow(4px 4px 8px rgba(239, 68, 68, 0.3));">конкурентов</span>
+                        </span>
+                    </span>
+                </h2>
             </div>
         </div>
-        
-<div class="relative h-[1px] w-full bg-border-faint anim-duration-15" data-anim="left-right"></div>
+
+        <div class="marquee mt-8 sm:mt-10 anim-opacity-translate" data-anim="opacity-translate" style="overflow: hidden; white-space: nowrap; mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); animation: opacity-and-translate 0.8s var(--global-easing) 0.4s forwards;">
+            <div class="marquee__track">
+                <div class="marquee__group" style="gap: 0 3rem; padding-right: 3rem;">
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Диджитал маркетинг</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Доверие</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Креативность</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Новые технологии</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Искусственный интеллект</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">E-commerce</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Дизайн UX/UI</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Разработка сайтов</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                </div>
+                <div class="marquee__group" style="gap: 0 3rem; padding-right: 3rem;" aria-hidden="true">
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Диджитал маркетинг</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Доверие</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Креативность</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Новые технологии</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Искусственный интеллект</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">E-commerce</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Дизайн UX/UI</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                    <span class="text-faint uppercase" style="font-size: clamp(20px, 1.8vw, 28px); letter-spacing: 0.15em; flex-shrink: 0;">Разработка сайтов</span>
+                    <span class="text-faint" style="font-size: clamp(20px, 1.8vw, 28px); flex-shrink: 0;">✦</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-12 mt-8 sm:mt-10">
+            <div class="col-span-12 flex flex-col items-center">
+                <p class="text-secondary text-center anim-opacity-translate" data-anim="opacity-translate" style="font-size: clamp(17px, 1.4vw, 22px); line-height: 1.6; max-width: 40rem; animation: opacity-and-translate 0.8s var(--global-easing) 0.6s forwards;">
+                    Благодаря комплексному подходу, я создаю не только эстетически привлекательные сайты, но и эффективные инструменты продаж.
+                </p>
+            </div>
+        </div>
+
+        <div class="relative h-[1px] w-full bg-border-faint mt-16 sm:mt-24 anim-duration-15" data-anim="left-right"></div>
     </section>
 
     <section class="relative mt-8 overflow-hidden grid-12" id="work">
